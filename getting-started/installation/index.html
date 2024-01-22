@@ -20,7 +20,7 @@
     
     
       
-        <title>Installation - Low-Ops Platform Documentation</title>
+        <title>Low Ops Platform setup - Low-Ops Platform Documentation</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#low-ops-platform-setup" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Low Ops Platform setup
             
           </span>
         </div>
@@ -319,6 +324,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../advanced-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../developer/" class="md-nav__link">
         
   
@@ -346,16 +372,108 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Low Ops Platform setup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Installation
+    Low Ops Platform setup
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Foundation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -526,6 +644,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Foundation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -540,9 +728,68 @@
                   
 
 
-  <h1>Installation</h1>
+<h1 id="low-ops-platform-setup">Low Ops Platform setup</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<h3 id="required-packages">Required packages</h3>
+<p>The following binaries must be present on the machine with access to Kubernetes api before starting:</p>
+<ul>
+<li>kubectl <code>v1.28.0</code></li>
+<li>helm <code>v3.9.4</code></li>
+</ul>
+<h3 id="kubernetes">Kubernetes</h3>
+<p>LowOps platform requires a Kubernetes cluster.</p>
+<p>Curently supported versions are:</p>
+<ul>
+<li><code>1.27</code></li>
+</ul>
+<h2 id="platform-foundation">Platform Foundation</h2>
+<p>The platform foundation is an infrastructure level that has to provide a scalable, flexeble and extensible enviromnemt for the platform lifecycle. To build the platform foundation, you can use cloud providers or on-premise solutions that allow you to run managed or self-managed Kubernetes (k8s) clusters.</p>
+<p>There are 2 different platform <code>foundation_type</code>s:</p>
+<ul>
+<li>
+<p><code>generic</code> - Default platform installation method supports any Kubernetes custom or managed solution. All platform components required to run future applications workloads will be installed automatically.</p>
+</li>
+<li>
+<p><code>aws</code> - Optimised platform installation for AWS-specific services natively supports other <code>AWS</code> services such as EKS, RDS, S3, ELB, EBS. To use AWS-managed data resources, you need to create them before platform installation as part of the foundation setup. Refer to the diagram bellow for more details.</p>
+</li>
+</ul>
+<p>High level AWS diagram:</p>
+<p><img alt="LowOps AWS" src="../../assets/aws-foundation.png" /></p>
+<h2 id="platform-configuration">Platform Configuration</h2>
+<p>Before starting the platform installation process, check the configuration options below. Change required paramaters to match your environment setup.</p>
+<p>Update values file with <code>values.yaml</code> example:</p>
+<p><div class="highlight"><pre><span></span><code>lowops:
+  image:
+    containerImage: registry.gitlab.com/cinaq/low-ops-platform/image:0-ci-v2-0-0
 
-
+  # LowOps platfrom configuration variables
+  config:
+    common:
+      base_domain: ci.cinaq.com
+      platform_state: present
+      foundation_type: generic
+      email_domain: cinaq.com
+      general_client_name: CI
+      platform_version: v2.0.0
+</code></pre></div>
+For more advanced configuration follow this <a href="../advanced-configuration/">page</a> </p>
+<h2 id="platform-installation">Platform Installation</h2>
+<p>From the deploy server with access to the Kubernetes cluster API. Install the platform by installing <code>lowops</code> helm chart.</p>
+<p>Add lowops helm repository.</p>
+<div class="highlight"><pre><span></span><code>helm repo add --username $PAT_NAME --password $PAT_TOKEN lowops \
+    &quot;https://gitlab.com/api/v4/projects/41532268/packages/helm/stable&quot;
+</code></pre></div>
+<p>Run <code>helm install</code> command to start the platform setup process.</p>
+<div class="highlight"><pre><span></span><code>HELM_CMD=&quot;helm upgrade -i lowops-platform lowops/lowops -n $NAMESPACE&quot;
+if [ -f &quot;$CHART_VALUES_FILE&quot; ]; then
+    HELM_CMD=&quot;$HELM_CMD -f $CHART_VALUES_FILE&quot;
+fi
+if [ -n &quot;$CHART_VERSION&quot; ]; then
+    HELM_CMD=&quot;$HELM_CMD --version=$CHART_VERSION&quot;
+fi
+echo &quot;$HELM_CMD&quot;
+eval &quot;$HELM_CMD&quot;
+</code></pre></div>
 
 
 
