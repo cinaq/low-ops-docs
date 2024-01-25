@@ -439,6 +439,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -468,6 +477,39 @@
       Platform Installation
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Platform Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Namespace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-metallb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install metallb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Platform
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -681,6 +723,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -711,6 +762,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Platform Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Namespace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-metallb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install metallb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Platform
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -733,8 +817,8 @@
 <h3 id="required-packages">Required packages</h3>
 <p>The following binaries must be present on the machine with access to Kubernetes api before starting:</p>
 <ul>
-<li>kubectl <code>v1.28.0</code></li>
-<li>helm <code>v3.9.4</code></li>
+<li>kubectl - <code>v1.27</code></li>
+<li>helm - <code>v3.9</code></li>
 </ul>
 <h3 id="kubernetes">Kubernetes</h3>
 <p>LowOps platform requires a Kubernetes cluster.</p>
@@ -742,6 +826,8 @@
 <ul>
 <li><code>1.27</code></li>
 </ul>
+<h3 id="resources">Resources</h3>
+<p>To run the platform you'll need at least 16 GB RAM and 8 core CPU.</p>
 <h2 id="platform-foundation">Platform Foundation</h2>
 <p>The platform foundation is an infrastructure level that has to provide a scalable, flexeble and extensible enviromnemt for the platform lifecycle. To build the platform foundation, you can use cloud providers or on-premise solutions that allow you to run managed or self-managed Kubernetes (k8s) clusters.</p>
 <p>There are 2 different platform <code>foundation_type</code>s:</p>
@@ -757,10 +843,11 @@
 <p><img alt="LowOps AWS" src="../../assets/aws-foundation.png" /></p>
 <h2 id="platform-configuration">Platform Configuration</h2>
 <p>Before starting the platform installation process, check the configuration options below. Change required paramaters to match your environment setup.</p>
-<p>Update values file with <code>values.yaml</code> example:</p>
-<p><div class="highlight"><pre><span></span><code>lowops:
+<p>Create values file <code>values.yaml</code> with following parameters:</p>
+<p><code>For more advanced configuration and options descriptions follow this [page](./advanced-configuration.md)</code></p>
+<div class="highlight"><pre><span></span><code>lowops:
   image:
-    containerImage: registry.gitlab.com/cinaq/low-ops-platform/image:0-ci-v2-0-0
+    containerImage: registry.gitlab.com/cinaq/low-ops-platform/ansible-roles:0-ci-v2-0-0
 
   # LowOps platfrom configuration variables
   config:
@@ -769,18 +856,75 @@
       platform_state: present
       foundation_type: generic
       email_domain: cinaq.com
-      general_client_name: CI
+      general_client_name: CINAQ
       platform_version: v2.0.0
+  # Set lowops custom images tags to the same version
+      rootfs_app_image_tag: 0-ci-v2-0-0
+      rootfs_builder_image_tag: 0-ci-v2-0-0
+      toolkit_image_tag: 0-ci-v2-0-0
+      s3_gateway_image_tag: 0-ci-v2-0-0
+      oauth2proxy_image_tag: 0-ci-v2-0-0
+      keycloak_image_tag: 0-ci-v2-0-0
+    ingress:
+  # Update certificate and key params values to base64 encoded strings 
+      default_ssl_cert: base64-encoded-cert-string
+      default_ssl_key: base64-encoded-key-string
 </code></pre></div>
-For more advanced configuration follow this <a href="../advanced-configuration/">page</a> </p>
 <h2 id="platform-installation">Platform Installation</h2>
+<h3 id="configure-namespace">Configure Namespace</h3>
+<p>Run script below to create deployment job namespace.
+Add pull secret to the namespace. </p>
+<div class="highlight"><pre><span></span><code>NAMESPACE=lowops-devops
+kubectl create namespace &quot;$NAMESPACE&quot;
+
+UPSTREAM_REGISTRY=&quot;registry.gitlab.com&quot;
+UPSTREAM_REGISTRY_USER=&quot;registry-user&quot; # change with your resgitry user
+UPSTREAM_REGISTRY_TOKEN=&quot;registry-token&quot; # change with your registry password
+UPSTREAM_REGISTRY_AUTH=$(echo -n &quot;$UPSTREAM_REGISTRY_USER:$UPSTREAM_REGISTRY_TOKEN&quot; | base64)
+
+mkdir -p /tmp/lowops-docker-config
+echo &quot;
+{
+    \&quot;auths\&quot;: {
+        \&quot;$UPSTREAM_REGISTRY\&quot;: {\&quot;auth\&quot;: \&quot;$UPSTREAM_REGISTRY_AUTH\&quot;}
+    }
+}
+&quot; &gt; /tmp/lowops-docker-config/config.json
+
+# ensure lowops-registry secret exists
+kubectl -n &quot;$NAMESPACE&quot; create secret generic lowops-registry --from-file=.dockerconfigjson=/tmp/lowops-docker-config/config.json --type=kubernetes.io/dockerconfigjson
+</code></pre></div>
+<h3 id="install-metallb">Install metallb</h3>
+<div class="highlight"><pre><span></span><code>**Note:** This step is not needed for managed k8s solutions.
+</code></pre></div>
+<p>Add bitnami helm repo</p>
+<div class="highlight"><pre><span></span><code>helm repo add &quot;bitnami&quot; &quot;https://charts.bitnami.com/bitnami&quot;
+helm repo update
+</code></pre></div>
+<p>Install metallb chart</p>
+<div class="highlight"><pre><span></span><code># Network pool must be accesseble from cluster.
+START_NETWORK=172.20.255.200
+END_NETWORK=172.20.255.250
+helm upgrade -i -n metallb --create-namespace metallb bitnami/metallb \
+    --version 3.0.12 \
+    --set &quot;configInline.address-pools[0].name=default&quot; \
+    --set &quot;configInline.address-pools[0].protocol=layer2&quot; \
+    --set &quot;configInline.address-pools[0].addresses[0]=${START_NETWORK}-${END_NETWORK}&quot; \
+    --set &quot;speaker.secretValue=stronk-key&quot;
+</code></pre></div>
+<h3 id="install-platform">Install Platform</h3>
 <p>From the deploy server with access to the Kubernetes cluster API. Install the platform by installing <code>lowops</code> helm chart.</p>
 <p>Add lowops helm repository.</p>
-<div class="highlight"><pre><span></span><code>helm repo add --username $PAT_NAME --password $PAT_TOKEN lowops \
+<div class="highlight"><pre><span></span><code>helm repo add --username $UPSTREAM_REGISTRY_USER --password $UPSTREAM_REGISTRY_TOKEN lowops \
     &quot;https://gitlab.com/api/v4/projects/41532268/packages/helm/stable&quot;
+
+helm repo update
 </code></pre></div>
 <p>Run <code>helm install</code> command to start the platform setup process.</p>
-<div class="highlight"><pre><span></span><code>HELM_CMD=&quot;helm upgrade -i lowops-platform lowops/lowops -n $NAMESPACE&quot;
+<div class="highlight"><pre><span></span><code>NAMESPACE=lowops-devops
+CHART_VALUES_FILE=values.yaml
+CHART_VERSION=0.1.70
+HELM_CMD=&quot;helm upgrade -i lowops-platform lowops/lowops -n $NAMESPACE&quot;
 if [ -f &quot;$CHART_VALUES_FILE&quot; ]; then
     HELM_CMD=&quot;$HELM_CMD -f $CHART_VALUES_FILE&quot;
 fi
@@ -790,6 +934,10 @@ fi
 echo &quot;$HELM_CMD&quot;
 eval &quot;$HELM_CMD&quot;
 </code></pre></div>
+<p>After deploy job started you can get installation log</p>
+<div class="highlight"><pre><span></span><code>kubectl logs -n lowops-devops --timestamps=true job/lowops-platform -f
+</code></pre></div>
+<p>After deploy finished successfully start with exploring LowOps platform portal. In browser access https://portal.ci.cinaq.com (where <code>ci.cinaq.com</code> is your base domain.)</p>
 
 
 
