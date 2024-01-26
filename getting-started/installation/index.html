@@ -20,7 +20,7 @@
     
     
       
-        <title>Low Ops Platform setup - Low-Ops Platform Documentation</title>
+        <title>Low Ops Platform installation - Low-Ops Platform Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#low-ops-platform-setup" class="md-skip">
+        <a href="#low-ops-platform-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Low Ops Platform setup
+              Low Ops Platform installation
             
           </span>
         </div>
@@ -379,7 +379,7 @@
           
   
   <span class="md-ellipsis">
-    Low Ops Platform setup
+    Low Ops Platform installation
   </span>
   
 
@@ -390,7 +390,7 @@
         
   
   <span class="md-ellipsis">
-    Low Ops Platform setup
+    Low Ops Platform installation
   </span>
   
 
@@ -812,7 +812,7 @@
                   
 
 
-<h1 id="low-ops-platform-setup">Low Ops Platform setup</h1>
+<h1 id="low-ops-platform-installation">Low Ops Platform installation</h1>
 <h2 id="prerequisites">Prerequisites</h2>
 <h3 id="required-packages">Required packages</h3>
 <p>The following binaries must be present on the machine with access to Kubernetes api before starting:</p>
@@ -844,7 +844,7 @@
 <h2 id="platform-configuration">Platform Configuration</h2>
 <p>Before starting the platform installation process, check the configuration options below. Change required paramaters to match your environment setup.</p>
 <p>Create values file <code>values.yaml</code> with following parameters:</p>
-<p><code>For more advanced configuration and options descriptions follow this [page](./advanced-configuration.md)</code></p>
+<p>For more advanced configuration and options descriptions follow this <a href="../advanced-configuration/">page</a></p>
 <div class="highlight"><pre><span></span><code>lowops:
   image:
     containerImage: registry.gitlab.com/cinaq/low-ops-platform/ansible-roles:0-ci-v2-0-0
@@ -895,8 +895,9 @@ echo &quot;
 kubectl -n &quot;$NAMESPACE&quot; create secret generic lowops-registry --from-file=.dockerconfigjson=/tmp/lowops-docker-config/config.json --type=kubernetes.io/dockerconfigjson
 </code></pre></div>
 <h3 id="install-metallb">Install metallb</h3>
-<div class="highlight"><pre><span></span><code>**Note:** This step is not needed for managed k8s solutions.
-</code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> This step is not needed for managed k8s solutions.</p>
+</blockquote>
 <p>Add bitnami helm repo</p>
 <div class="highlight"><pre><span></span><code>helm repo add &quot;bitnami&quot; &quot;https://charts.bitnami.com/bitnami&quot;
 helm repo update
