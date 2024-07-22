@@ -875,23 +875,25 @@
   <h1>Configure settings</h1>
 
 <h2 id="configure-settings"><em>Configure Settings</em></h2>
-<p>This page allows you to view and make changes to the current settings. It is divided into three blocks: <code>Settings</code>, <code>Environment Variables</code>, and <code>Runtime Settings</code>.</p>
-<p><strong><code>Setting</code> section</strong></p>
-<p>Consists of Domain and Scaling settings that can be modified as needed.</p>
+<p>This page allows you to view and make changes to the current settings. It is divided into five blocks: <code>Domain</code>, <code>Scaling</code>,<code>Environment Variables</code>, <code>Runtime Settings</code>, and <code>Delete this environment</code>.</p>
+<p><strong><code>Domain</code> section</strong></p>
+<p>Consists of the <code>Application URL</code>, and fields for <code>TLS Certificate Chain</code> and <code>TLS Private Key</code>.  </p>
 <p><img alt="" src="../../assets/configure_settings.jpg" /></p>
+<p><strong><code>Scaling</code> section</strong> </p>
+<p>Allows to modify <code>Quotas CPU</code>, <code>Quotas memory</code>, <code>Replicas</code>.</p>
+<p><img alt="" src="../../assets/scaling_settings.jpg" /></p>
 <p><em>To make changes</em>:</p>
 <ul>
-<li>Click on the <code>Edit</code> button in the upper right corner.</li>
-<li>Update the fields with changes and click on the <code>Save</code> button.</li>
+<li>Update the fields with changes and click on the <code>Save changes</code> button.</li>
 </ul>
-<p><strong>Environment Variable section</strong></p>
+<p><strong><code>Environment Variable</code> section</strong></p>
 <p>Allows you to add a new environment variable.</p>
 <p><img alt="" src="../../assets/add_new_environment.jpg" /></p>
 <ul>
 <li>Click on the <code>Add</code> button in the upper right corner.</li>
 <li>In the pop-up window, include the <code>Name</code>, <code>Value</code>, and <code>Description</code>, check the <code>Protected</code> checkbox (optional), and click on the <code>Add</code> button.</li>
 </ul>
-<p><strong>Runtime Settings Section</strong></p>
+<p><strong><code>Runtime Settings</code> Section</strong></p>
 <p>Allows you to add a new runtime setting.</p>
 <p><img alt="" src="../../assets/runtime_settings.jpg" /></p>
 <ul>
@@ -901,6 +903,9 @@
 <blockquote>
 <p><strong><em>NOTE:</em></strong> For the new setting values to take effect, re-deploy the application.</p>
 </blockquote>
+<p><strong><code>Delete this environment</code> Section</strong></p>
+<p>Allows to delete the environment and everything that this environment contains. Simply click on the red <code>Delete environment</code> button. </p>
+<p><img alt="" src="../../assets/delete_environment.jpg" /></p>
 
 
 
