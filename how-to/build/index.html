@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../onboard-new-application/">
+        <link rel="prev" href="../application_actions/">
       
       
-        <link rel="next" href="../../references/application-types/">
+        <link rel="next" href="../configure-settings/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Privileged access - Low-Ops Platform Documentation</title>
+        <title>Build - Low-Ops Platform Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#privileged-access" class="md-skip">
+        <a href="#build" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Privileged access
+              Build
             
           </span>
         </div>
@@ -475,10 +475,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../build/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Build
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -487,6 +505,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-severity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Severity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Policies
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -706,28 +769,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Privileged access
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../privileged-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -736,33 +781,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#privileged-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Privileged Access
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -870,9 +888,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#privileged-access" class="md-nav__link">
+  <a href="#build" class="md-nav__link">
     <span class="md-ellipsis">
-      Privileged Access
+      Build
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-severity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Severity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Policies
     </span>
   </a>
   
@@ -893,24 +929,43 @@
                   
 
 
-  <h1>Privileged access</h1>
+  <h1>Build</h1>
 
-<h2 id="privileged-access"><em>Privileged Access</em></h2>
-<p><em>Privileged Access facilitates access to the URLs and login credentials, enabling users to seamlessly log in to the Mendix Studio Pro and the Mendix Debugger.</em></p>
-<p>To access the <code>Privilieged Access</code> tab, follow the steps below:</p>
+<h2 id="build"><em>Build</em></h2>
+<p><em>This section covers the build versions of your Mendix applications.The Build page allows you to view and manage these versions, providing insight into your application's development history and enabling you to track changes over time.</em></p>
+<p><strong>To access the <code>Build</code> tab, follow the steps below:</strong></p>
 <ol>
-<li>On the <code>Catalog</code> homepage, choose the application from the list. </li>
-<li>Once the application is selected, the navigaion menu will appear on the left side. Click on the <code>Environments</code> tab.</li>
-<li>Select one of the environments such as <code>Test</code>,<code>Acceptance</code> or <code>Production</code>.</li>
+<li>Navigate to the <code>Home</code> page and open one of the applications.</li>
 </ol>
-<p><img alt="" src="../../assets/environments_overview.jpg" /></p>
+<p><img alt="" src="../../assets/home_page.jpg" /></p>
 <ol>
-<li>Once one of the environments is selected, a new dropdown navigation menu will appear. </li>
-<li>In the left-side menu, select <code>Privilieged Access</code>.</li>
-<li>Under the <code>Admin User</code> section, you will find the URL and login credentials to log in to Mendix Studio Pro.</li>
-<li>Under the <code>Debugging</code> section, you will find URL and password to login to the Mendix Debugger via Mendix Studio Pro.</li>
+<li>Inside the app, navigate to the <code>Build</code> tab. </li>
 </ol>
-<p><img alt="" src="../../assets/privilieged_access.jpg" /></p>
+<p><img alt="" src="../../assets/build.jpg" /></p>
+<h2 id="security-severity"><em>Security Severity</em></h2>
+<p><em>The Security Severity feature helps identify and categorize potential security issues within each build, allowing to address vulnerabilities promptly.</em></p>
+<ol>
+<li>By clicking the <code>Details</code>, you can access more comprehensive information about the security issues detected in a specific build.</li>
+</ol>
+<p><img alt="" src="../../assets/security_severity.jpg" /></p>
+<ol>
+<li>When opening the Details, you will see a summary of security vulnerabilities categorized by severity (High, Medium, Low), along with a table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions.</li>
+</ol>
+<p><img alt="" src="../../assets/security_severity_inside.jpg" /></p>
+<h2 id="policies"><em>Policies</em></h2>
+<p><em>Policies are a set of pre-defined rules that validate Mendix app development against best practices.</em></p>
+<ol>
+<li>By clicking the <code>Details</code>, you can access more comprehensive information about the Policies.</li>
+</ol>
+<p><img alt="" src="../../assets/policies.jpg" /></p>
+<ol>
+<li>When opening the Details, you will see a summary of policy test results, including the total number of tests, passed tests, and failed tests.</li>
+</ol>
+<p><img alt="" src="../../assets/policies_inside.jpg" /></p>
+<ol>
+<li>To view details of the failed policies, simply click the arrow as shown in the screenshot.</li>
+</ol>
+<p><img alt="" src="../../assets/policies_failed.jpg" /></p>
 
 
 
@@ -940,7 +995,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../onboard-new-application/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Onboard New Application">
+          <a href="../application_actions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Application actions">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -950,20 +1005,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Onboard New Application
+                Application actions
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../references/application-types/" class="md-footer__link md-footer__link--next" aria-label="Next: Application Types">
+          <a href="../configure-settings/" class="md-footer__link md-footer__link--next" aria-label="Next: Configure settings">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Application Types
+                Configure settings
               </div>
             </div>
             <div class="md-footer__button md-icon">
