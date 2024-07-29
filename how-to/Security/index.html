@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../mendix-8/">
+        <link rel="prev" href="../../getting-started/installation/">
       
       
-        <link rel="next" href="../offboard-application/">
+        <link rel="next" href="../activities/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Monitoring and alerts - Low-Ops Platform Documentation</title>
+        <title>Security - Low-Ops Platform Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#monitor-metrics" class="md-skip">
+        <a href="#security" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Monitoring and alerts
+              Security
             
           </span>
         </div>
@@ -433,10 +433,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Security/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -445,6 +463,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -664,28 +709,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Monitoring and alerts
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../monitoring-and-alerts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -694,42 +721,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#monitor-metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitor Metrics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alerts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alerts
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -879,18 +870,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#monitor-metrics" class="md-nav__link">
+  <a href="#security" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitor Metrics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alerts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Alerts
+      Security
     </span>
   </a>
   
@@ -911,44 +893,28 @@
                   
 
 
-  <h1>Monitoring and alerts</h1>
+  <h1>Security</h1>
 
-<h2 id="monitor-metrics"><em>Monitor Metrics</em></h2>
-<p><em>Monitoring is essential for proactively identifying and addressing system issues, ensuring performance, and maintaining overall reliability with minimal manual intervention.</em></p>
-<p><strong>To access the <code>Monitor</code> tab, follow the steps below:</strong></p>
+<h2 id="security"><em>Security</em></h2>
+<p><em>Security tab facilitates access to the URLs and login credentials, enabling users to seamlessly log in to the Mendix Studio Pro and the Mendix Debugger.</em></p>
+<p>To access the <code>Security</code> tab, follow the steps below:</p>
 <ol>
-<li>Navigate to the Environments tab and choose the environment from the list.</li>
+<li>From the home page, choose one of the applications from the list. </li>
+<li>Once the application is selected, select one of the environments such as <code>Test</code>,<code>Acceptance</code> or <code>Production</code>.</li>
 </ol>
 <p><img alt="" src="../../assets/environments_overview.jpg" /></p>
 <ol>
-<li>Once one of the environments is selected, a new dropdown navigation menu will appear. </li>
-<li>In the left-side menu, select <code>Monitor</code>.</li>
+<li>In the left-side menu, select <code>Security</code>.</li>
 </ol>
-<p><img alt="" src="../../assets/monitoring.jpg" /></p>
+<p><img alt="" src="../../assets/security.jpg" /></p>
 <ol>
-<li>Select the period for which to display the metrics: <code>Today</code>, <code>24 hours</code>, <code>3 days</code>, <code>30 days</code>.</li>
+<li>Under the <code>Admin User</code> section, you will find the URL and login credentials to log in to Mendix Studio Pro.</li>
 </ol>
-<p><strong>Microflow metrics - Mendix Microflow Execution Frequency</strong></p>
-<p>Displays Mendix Microflow Executon Frequency (per second).</p>
-<p><img alt="" src="../../assets/execution_frequency.jpg" /></p>
-<p><strong>Microflow metrics - Mendix Microflow Execution Time</strong></p>
-<p>Displays Mendix Microflow Execution Time.</p>
-<p><img alt="" src="../../assets/execution_time.jpg" /></p>
-<h2 id="alerts"><em>Alerts</em></h2>
-<p><em>Alerts serve as automated notifications that promptly inform operators about potential issues or deviations from normal behavior, enabling rapid response and resolution.</em></p>
-<p><strong>To access the <code>Alerts</code> tab, follow the steps below:</strong></p>
+<p><img alt="" src="../../assets/admin_user.jpg" /></p>
 <ol>
-<li>Navigate to the Environments tab and choose the environment from the list.</li>
+<li>Under the <code>Debugging</code> section, you will find URL and password to login to the Mendix Debugger via Mendix Studio Pro.</li>
 </ol>
-<p><img alt="" src="../../assets/environments_overview.jpg" /></p>
-<ol>
-<li>Once one of the environments is selected, a new dropdown navigation menu will appear. </li>
-<li>In the left-side menu, select <code>Alerts</code>.</li>
-</ol>
-<p><img alt="" src="../../assets/alerts.jpg" /></p>
-<ol>
-<li>The <code>State</code> column will notify if the application is running without problems or if any problems have occured.</li>
-</ol>
+<p><img alt="" src="../../assets/debugger.jpg" /></p>
 
 
 
@@ -978,7 +944,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../mendix-8/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mendix 8">
+          <a href="../../getting-started/installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Low Ops Platform installation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -988,20 +954,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Mendix 8
+                Low Ops Platform installation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../offboard-application/" class="md-footer__link md-footer__link--next" aria-label="Next: Offboard an Application">
+          <a href="../activities/" class="md-footer__link md-footer__link--next" aria-label="Next: Activities">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Offboard an Application
+                Activities
               </div>
             </div>
             <div class="md-footer__button md-icon">
