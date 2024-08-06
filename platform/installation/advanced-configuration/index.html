@@ -1545,6 +1545,11 @@ helm repo update
 <td>LowOps platform mendix license key</td>
 <td>""</td>
 </tr>
+<tr>
+<td>lowops.config.common.storage_class</td>
+<td>LowOps platform storage class. When <code>foundation_type</code> == <code>aws</code>, use <code>gp2</code> storage class.</td>
+<td>"csi-hostpath-sc"</td>
+</tr>
 </tbody>
 </table>
 <h3 id="cloudnative-postgres-service-cnpg">Cloudnative Postgres Service (CNPG)</h3>
@@ -1893,7 +1898,7 @@ For <code>generic</code> type, the system will point to MinIO service inside pla
 </thead>
 <tbody>
 <tr>
-<td>lowops.config.s3_gateway.core_root_user_set</td>
+<td>lowops.config.s3_gateway.core_root_user</td>
 <td>LowOps platform s3 gateway user name to access core storage buckets</td>
 <td>""</td>
 </tr>
