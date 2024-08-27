@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../architecture/high-level-architecture/">
+        <link rel="prev" href="../installation/">
       
       
-        <link rel="next" href="../advanced-configuration/">
+        <link rel="next" href="../../../references/application-types/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Low Ops Platform installation - Low-Ops Platform Documentation</title>
+        <title>Low-Ops Platform Light Version - Low-Ops Platform Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#low-ops-platform-installation" class="md-skip">
+        <a href="#low-ops-platform-light-version" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Low Ops Platform installation
+              Low-Ops Platform Light Version
             
           </span>
         </div>
@@ -921,30 +921,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Low Ops Platform installation
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -953,128 +933,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#required-packages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Required packages
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubernetes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-foundation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Foundation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Platform Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configure-namespace" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Namespace
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-metallb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install metallb
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Platform
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1220,25 +1078,25 @@
           <li class="md-nav__item">
   <a href="#required-packages" class="md-nav__link">
     <span class="md-ellipsis">
-      Required packages
+      Required Packages
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#kubernetes" class="md-nav__link">
+  <a href="#kubernetes-cluster" class="md-nav__link">
     <span class="md-ellipsis">
-      Kubernetes
+      Kubernetes Cluster
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
+  <a href="#system-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Resources
+      System Resources
     </span>
   </a>
   
@@ -1259,15 +1117,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#platform-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#platform-installation" class="md-nav__link">
     <span class="md-ellipsis">
       Platform Installation
@@ -1278,27 +1127,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configure-namespace" class="md-nav__link">
+  <a href="#step-1-install-kubernetes-cluster" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Namespace
+      Step 1: Install Kubernetes Cluster
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-metallb" class="md-nav__link">
+  <a href="#step-2-install-proxy-required-only-for-light-platform-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Install metallb
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Platform
+      Step 2: Install Proxy (Required Only for Light Platform Installation)
     </span>
   </a>
   
@@ -1324,126 +1164,85 @@
                   
 
 
-<h1 id="low-ops-platform-installation">Low Ops Platform installation</h1>
+<h1 id="low-ops-platform-light-version">Low-Ops Platform Light Version</h1>
+<p>The light version of the Low-Ops platform allows you to run Low-Ops on a single Linux machine, making it ideal for testing purposes.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<h3 id="required-packages">Required packages</h3>
-<p>The following binaries must be present on the machine with access to Kubernetes api before starting:</p>
+<h3 id="required-packages">Required Packages</h3>
+<p>Ensure the following binaries are installed on the machine with access to the Kubernetes API before starting:</p>
 <ul>
-<li>kubectl - <code>v1.27</code></li>
-<li>helm - <code>v3.9</code></li>
+<li><code>kubectl</code> - Version <code>v1.27</code></li>
+<li><code>helm</code> - Version <code>v3.9</code></li>
+<li><code>kind</code> - Version <code>v1.27</code></li>
 </ul>
-<h3 id="kubernetes">Kubernetes</h3>
-<p>LowOps platform requires a Kubernetes cluster.</p>
-<p>Curently supported versions are:</p>
+<h3 id="kubernetes-cluster">Kubernetes Cluster</h3>
+<p>The Low-Ops platform requires a Kubernetes cluster. Currently supported Kubernetes versions are:</p>
 <ul>
-<li><code>1.27</code></li>
+<li><code>v1.27</code></li>
+<li><code>v1.28</code></li>
+<li><code>v1.29</code></li>
 </ul>
-<h3 id="resources">Resources</h3>
-<p>To run the platform you'll need at least 16 GB RAM and 8 core CPU.</p>
+<h3 id="system-resources">System Resources</h3>
+<p>To run the platform, the system should have at least 16 GB of RAM and an 8-core CPU.</p>
 <h2 id="platform-foundation">Platform Foundation</h2>
-<p>The platform foundation is an infrastructure level that has to provide a scalable, flexeble and extensible enviromnemt for the platform lifecycle. To build the platform foundation, you can use cloud providers or on-premise solutions that allow you to run managed or self-managed Kubernetes (k8s) clusters.</p>
-<p>There are 2 different platform <code>foundation_type</code>s:</p>
-<ul>
-<li>
-<p><code>generic</code> - Default platform installation method supports any Kubernetes custom or managed solution. All platform components required to run future applications workloads will be installed automatically.</p>
-</li>
-<li>
-<p><code>aws</code> - Optimised platform installation for AWS-specific services natively supports other <code>AWS</code> services such as EKS, RDS, S3, ELB, EBS. To use AWS-managed data resources, you need to create them before platform installation as part of the foundation setup. Refer to the diagram bellow for more details.</p>
-</li>
-</ul>
-<p>High level AWS diagram:</p>
-<p><img alt="LowOps AWS" src="../../../assets/aws-foundation.png" /></p>
-<h2 id="platform-configuration">Platform Configuration</h2>
-<p>Before starting the platform installation process, check the configuration options below. Change required paramaters to match your environment setup.</p>
-<p>Create values file <code>values.yaml</code> with following parameters:</p>
-<p>For more advanced configuration and options descriptions follow this <a href="../advanced-configuration/">page</a></p>
-<div class="highlight"><pre><span></span><code>lowops:
-  image:
-    containerImage: registry.gitlab.com/cinaq/low-ops-platform/ansible-roles:0-ci-v3-1-2
-
-  # LowOps platfrom configuration variables
-  config:
-    common:
-      base_domain: ci.cinaq.com
-      platform_state: present
-      foundation_type: generic
-      email_domain: cinaq.com
-      general_client_name: CINAQ
-      platform_version: v3.1.2
-    ingress:
-  # Update certificate and key params values to base64 encoded strings 
-      default_ssl_cert: base64-encoded-cert-string
-      default_ssl_key: base64-encoded-key-string
-</code></pre></div>
+<p>This setup requires a single Linux server with internet access and Docker installed.</p>
 <h2 id="platform-installation">Platform Installation</h2>
-<h3 id="configure-namespace">Configure Namespace</h3>
-<p>Run script below to create deployment job namespace.
-Add pull secret to the namespace. </p>
-<div class="highlight"><pre><span></span><code>NAMESPACE=lowops-devops
-kubectl create namespace &quot;$NAMESPACE&quot;
+<h3 id="step-1-install-kubernetes-cluster">Step 1: Install Kubernetes Cluster</h3>
+<p>Create a <code>kind-config.yaml</code> configuration file with the following content:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cluster</span>
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kind.x-k8s.io/v1alpha4</span>
+<span class="nt">nodes</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">control-plane</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">worker</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">worker</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">worker</span>
+<span class="nt">networking</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">apiServerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6443</span>
+<span class="w">  </span><span class="nt">apiServerAddress</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0</span>
+</code></pre></div>
+<p>Create the Kubernetes cluster on the Linux server. Replace <code>dev</code> with your company or project name:</p>
+<div class="highlight"><pre><span></span><code>kind<span class="w"> </span>create<span class="w"> </span>cluster<span class="w"> </span>--name<span class="w"> </span>dev<span class="w"> </span>--config<span class="w"> </span>./kind-config.yaml<span class="w"> </span>--image<span class="w"> </span><span class="s2">&quot;kindest/node:v1.27.3&quot;</span><span class="w"> </span>-v<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
+<p>Retrieve the Kubernetes configuration from the created cluster:</p>
+<div class="highlight"><pre><span></span><code>kind<span class="w"> </span>get<span class="w"> </span>kubeconfig<span class="w"> </span>--name<span class="o">=</span>dev<span class="w"> </span>&gt;<span class="w"> </span>~/.kube/config
+</code></pre></div>
+<h3 id="step-2-install-proxy-required-only-for-light-platform-installation">Step 2: Install Proxy (Required Only for Light Platform Installation)</h3>
+<p>Create an <code>haproxy.cfg</code> file with the following content:</p>
+<div class="highlight"><pre><span></span><code><span class="na">global</span>
+<span class="w">    </span><span class="na">log stdout format raw local0 info</span>
 
-UPSTREAM_REGISTRY=&quot;registry.gitlab.com&quot;
-UPSTREAM_REGISTRY_USER=&quot;registry-user&quot; # change with your resgitry user
-UPSTREAM_REGISTRY_TOKEN=&quot;registry-token&quot; # change with your registry password
-UPSTREAM_REGISTRY_AUTH=$(echo -n &quot;$UPSTREAM_REGISTRY_USER:$UPSTREAM_REGISTRY_TOKEN&quot; | base64)
+<span class="na">defaults</span>
+<span class="w">    </span><span class="na">log global</span>
+<span class="w">    </span><span class="na">retries 2</span>
+<span class="w">    </span><span class="na">option dontlognull</span>
+<span class="w">    </span><span class="na">timeout connect 10000</span>
+<span class="w">    </span><span class="na">timeout server 600000</span>
+<span class="w">    </span><span class="na">timeout client 600000</span>
 
-mkdir -p /tmp/lowops-docker-config
-echo &quot;
-{
-    \&quot;auths\&quot;: {
-        \&quot;$UPSTREAM_REGISTRY\&quot;: {\&quot;auth\&quot;: \&quot;$UPSTREAM_REGISTRY_AUTH\&quot;}
-    }
-}
-&quot; &gt; /tmp/lowops-docker-config/config.json
+<span class="na">frontend http_frontend</span>
+<span class="w">    </span><span class="na">bind *</span><span class="o">:</span><span class="s">80</span><span class="w"> </span>
+<span class="w">    </span><span class="na">default_backend http_backend</span>
 
-# ensure lowops-registry secret exists
-kubectl -n &quot;$NAMESPACE&quot; create secret generic lowops-registry --from-file=.dockerconfigjson=/tmp/lowops-docker-config/config.json --type=kubernetes.io/dockerconfigjson
-</code></pre></div>
-<h3 id="install-metallb">Install metallb</h3>
-<blockquote>
-<p><strong>Note:</strong> This step is not needed for managed k8s solutions.</p>
-</blockquote>
-<p>Add bitnami helm repo</p>
-<div class="highlight"><pre><span></span><code>helm repo add &quot;bitnami&quot; &quot;https://charts.bitnami.com/bitnami&quot;
-helm repo update
-</code></pre></div>
-<p>Install metallb chart</p>
-<div class="highlight"><pre><span></span><code># Network pool must be accesseble from cluster.
-START_NETWORK=172.20.255.200
-END_NETWORK=172.20.255.250
-helm upgrade -i -n metallb --create-namespace metallb bitnami/metallb \
-    --version 3.0.12 \
-    --set &quot;configInline.address-pools[0].name=default&quot; \
-    --set &quot;configInline.address-pools[0].protocol=layer2&quot; \
-    --set &quot;configInline.address-pools[0].addresses[0]=${START_NETWORK}-${END_NETWORK}&quot; \
-    --set &quot;speaker.secretValue=stronk-key&quot;
-</code></pre></div>
-<h3 id="install-platform">Install Platform</h3>
-<p>From the deploy server with access to the Kubernetes cluster API. Install the platform by installing <code>lowops</code> helm chart.</p>
-<p>Add lowops helm repository.</p>
-<div class="highlight"><pre><span></span><code>helm repo add --username $UPSTREAM_REGISTRY_USER --password $UPSTREAM_REGISTRY_TOKEN lowops \
-    &quot;https://gitlab.com/api/v4/projects/41532268/packages/helm/stable&quot;
+<span class="na">frontend https_frontend</span>
+<span class="w">    </span><span class="na">bind *</span><span class="o">:</span><span class="s">443</span><span class="w"> </span>
+<span class="w">    </span><span class="na">default_backend https_backend</span>
 
-helm repo update
+<span class="na">backend https_backend</span>
+<span class="w">    </span><span class="na">server nginx-ingress 172.19.255.200</span><span class="o">:</span><span class="s">443 check send-proxy</span>
+
+<span class="na">backend http_backend</span>
+<span class="w">    </span><span class="na">server nginx-ingress 172.19.255.200</span><span class="o">:</span><span class="s">80 check send-proxy</span>
 </code></pre></div>
-<p>Run <code>helm install</code> command to start the platform setup process.</p>
-<div class="highlight"><pre><span></span><code>NAMESPACE=lowops-devops
-CHART_VALUES_FILE=values.yaml
-CHART_VERSION=0.1.407
-HELM_CMD=&quot;helm upgrade -i lowops-platform lowops/lowops -n $NAMESPACE&quot;
-if [ -f &quot;$CHART_VALUES_FILE&quot; ]; then
-    HELM_CMD=&quot;$HELM_CMD -f $CHART_VALUES_FILE&quot;
-fi
-if [ -n &quot;$CHART_VERSION&quot; ]; then
-    HELM_CMD=&quot;$HELM_CMD --version=$CHART_VERSION&quot;
-fi
-echo &quot;$HELM_CMD&quot;
-eval &quot;$HELM_CMD&quot;
+<p>Start the HAProxy service using the following command:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--restart<span class="w"> </span>unless-stopped<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--name<span class="w"> </span>haproxy<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--network<span class="o">=</span>kind<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-p<span class="w"> </span><span class="m">443</span>:443<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-p<span class="w"> </span><span class="m">80</span>:80<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>haproxytech/haproxy-alpine:2.4
 </code></pre></div>
-<p>After deploy job started you can get installation log</p>
-<div class="highlight"><pre><span></span><code>kubectl logs -n lowops-devops --timestamps=true job/lowops-platform -f
-</code></pre></div>
-<p>After deploy finished successfully start with exploring LowOps platform portal. In browser access https://portal.ci.cinaq.com (where <code>ci.cinaq.com</code> is your base domain.)</p>
+<p>For further steps, please refer to the main installation page.</p>
 
 
 
@@ -1473,7 +1272,7 @@ eval &quot;$HELM_CMD&quot;
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../architecture/high-level-architecture/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Architecture">
+          <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Low Ops Platform installation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1483,20 +1282,20 @@ eval &quot;$HELM_CMD&quot;
                 Previous
               </span>
               <div class="md-ellipsis">
-                Architecture
+                Low Ops Platform installation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../advanced-configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Advanced configuration">
+          <a href="../../../references/application-types/" class="md-footer__link md-footer__link--next" aria-label="Next: Application Types">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Advanced configuration
+                Application Types
               </div>
             </div>
             <div class="md-footer__button md-icon">
