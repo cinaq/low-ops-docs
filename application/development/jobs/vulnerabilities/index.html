@@ -532,27 +532,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#understanding-vulnerabiliies" class="md-nav__link">
+  <a href="#accessing-vulnerabiliies" class="md-nav__link">
     <span class="md-ellipsis">
-      Understanding Vulnerabiliies
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#accessing-vulnerabiliies-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessing Vulnerabiliies Details
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interpreting-security-severity-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interpreting Security Severity Information
+      Accessing Vulnerabiliies
     </span>
   </a>
   
@@ -1757,27 +1739,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#understanding-vulnerabiliies" class="md-nav__link">
+  <a href="#accessing-vulnerabiliies" class="md-nav__link">
     <span class="md-ellipsis">
-      Understanding Vulnerabiliies
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#accessing-vulnerabiliies-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessing Vulnerabiliies Details
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interpreting-security-severity-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interpreting Security Severity Information
+      Accessing Vulnerabiliies
     </span>
   </a>
   
@@ -1799,44 +1763,32 @@
 
 
 <h1 id="vulnerabiliies">Vulnerabiliies</h1>
-<p>This document provides an overview of the Vulnerabiliies feature in your Mendix applications and instructions on how to access detailed security information.</p>
-<h2 id="understanding-vulnerabiliies">Understanding Vulnerabiliies</h2>
 <p>The Vulnerabiliies feature helps identify and categorize potential security issues within each build, allowing you to address vulnerabilities promptly.</p>
-<h2 id="accessing-vulnerabiliies-details">Accessing Vulnerabiliies Details</h2>
+<h2 id="accessing-vulnerabiliies">Accessing Vulnerabiliies</h2>
 <ol>
 <li>Navigate to the Pipelines tab of your application.</li>
-<li>Locate the Jobs section and click on them to open a new menu</li>
 <li>
-<p>Navigate to the 'Vulnerabilities' tab</p>
+<p>Locate the Jobs section and click on it.</p>
 <p><img src="../../../../assets/images/jobs.jpg" width="500" alt="Jobs overview" /></p>
 </li>
 <li>
-<p>Click on "Details" to access more comprehensive information about the security issues detected in a specific build.</p>
+<p>In the new menu that opens up, navigate to the 'Vulnerabilities' tab to access more comprehensive information about the security issues detected in a specific build.</p>
 <p><img src="../../../../assets/images/vulnerabilities.jpg" width="500" alt="Vulnerabilities" /></p>
 </li>
 <li>
 <p>Check the "Include image vulnerabilities" box to view security issues related to Docker images used in your application.</p>
-<p><img src="../../../../assets/images/security_severity_image.jpg" width="500" alt="Include image vulnerabilities checkbox" /></p>
+<p><img src="../../../../../assets/images/vulnerabilities_image.jpg" width="500" alt="Include image vulnerabilities checkbox" /></p>
 </li>
 <li>
-<p>In the Details view, you will see:</p>
+<p>Interpreting Security Severity Information:</p>
 <ul>
-<li>A summary of security vulnerabilities categorized by severity (High, Medium, Low)</li>
+<li>A summary of security vulnerabilities categorized by severity (Critical, High, Medium, Low)</li>
 <li>A table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions</li>
 </ul>
 </li>
 </ol>
 <blockquote>
-<p><strong>Note:</strong> Regularly reviewing Security Severity information can help maintain the security of your Mendix applications and address potential vulnerabilities in a timely manner.</p>
-</blockquote>
-<h2 id="interpreting-security-severity-information">Interpreting Security Severity Information</h2>
-<ul>
-<li>High Severity: These issues require immediate attention and should be addressed as soon as possible.</li>
-<li>Medium Severity: These issues are important but may not require immediate action. They should be addressed in your next update cycle.</li>
-<li>Low Severity: These issues pose minimal risk but should still be reviewed and addressed when convenient.</li>
-</ul>
-<blockquote>
-<p><strong>Tip:</strong> Always prioritize addressing high severity vulnerabilities to minimize potential security risks to your application. Don't forget to review Docker image vulnerabilities by checking the "Include image vulnerabilities" box.</p>
+<p><strong>Note:</strong> Regularly reviewing Vulnerabilities information can help maintain the security of your Mendix applications and address potential issues in a timely manner.</p>
 </blockquote>
 
 
