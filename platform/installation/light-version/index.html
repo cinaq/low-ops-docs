@@ -1940,6 +1940,7 @@
 <li><code>kubectl</code> - Version <code>v1.27</code></li>
 <li><code>helm</code> - Version <code>v3.9</code></li>
 <li><code>kind</code> - Version <code>v1.27</code></li>
+<li><code>docker</code> - Version <code>27.3.1</code></li>
 </ul>
 <h3 id="kubernetes-cluster">Kubernetes Cluster</h3>
 <p>The Low-Ops platform requires a Kubernetes cluster. Currently supported Kubernetes versions are:</p>
@@ -1950,6 +1951,26 @@
 </ul>
 <h3 id="system-resources">System Resources</h3>
 <p>To run the platform, the system should have at least 16 GB of RAM and an 8-core CPU.</p>
+<p>When running the platform on a single machine, the following changes are required:</p>
+<p>Update the following files with content:</p>
+<p>/etc/security/limits.conf
+<div class="highlight"><pre><span></span><code>*               soft    nofile           1048570
+*               hard    nofile           1048576
+</code></pre></div></p>
+<ul>
+<li>This increases the maximum number of open files (file descriptors) that processes can use</li>
+<li>Container platforms like Kubernetes and Docker can open many files simultaneously due to running multiple containers, handling logs, and managing network connections</li>
+<li>The default limits are often too low for production workloads</li>
+<li>Without these increases, you might see errors like "too many open files" or performance degradation</li>
+</ul>
+<p>/etc/sysctl.conf
+<div class="highlight"><pre><span></span><code>fs.inotify.max_user_watches=100000
+fs.inotify.max_user_instances=100000
+</code></pre></div>
+- inotify is a Linux kernel subsystem that provides file system event monitoring
+- Kubernetes and container workloads use this to watch for configuration changes, file updates, etc.
+- The default limits are typically too low for Kubernetes clusters
+- Without these increases, you might see errors like "no space left on device" (despite having disk space) or "too many open files" when Kubernetes tries to watch config files</p>
 <h2 id="platform-foundation">Platform Foundation</h2>
 <p>This setup requires a single Linux server with internet access and Docker installed.</p>
 <h2 id="platform-installation">Platform Installation</h2>

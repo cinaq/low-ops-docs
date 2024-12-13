@@ -2145,7 +2145,7 @@ helm repo update
 </tr>
 <tr>
 <td>lowops.config.common.foundation_type</td>
-<td>LowOps platform foundation type. Options <code>generic</code>, <code>aws</code> - must be set if running on AWS EKS.</td>
+<td>LowOps platform foundation type. Options <code>generic</code>, <code>aws</code> - when running AWS EKS. <code>azure</code> - when running Azure AKS.</td>
 <td>"generic"</td>
 </tr>
 <tr>
@@ -2170,12 +2170,12 @@ helm repo update
 </tr>
 <tr>
 <td>lowops.config.common.low_ops_env</td>
-<td>LowOps platform environment name. You can use any string except reserved values: <code>ci</code>, <code>trial</code>. Example <code>prod</code>, <code>stage</code></td>
+<td>LowOps platform environment name. You can use any string except reserved values: <code>dev</code>, <code>ci</code>, <code>trial</code>. Example <code>prod</code>, <code>stage</code></td>
 <td>"dev"</td>
 </tr>
 <tr>
 <td>lowops.config.common.platform_version</td>
-<td>LowOps platform version. Example: <code>v2.0.0.</code></td>
+<td>LowOps platform version. Example: <code>v3.2.4.</code></td>
 <td>""</td>
 </tr>
 <tr>
