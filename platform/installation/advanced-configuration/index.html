@@ -2165,7 +2165,7 @@ helm repo update
 </tr>
 <tr>
 <td>lowops.config.common.shared_db_type</td>
-<td>LowOps platform shared database type for running applications. Options: <code>platform_pg</code>, <code>platform_cnpg</code>, <code>rds_mysql</code>, <code>rds_postgres</code></td>
+<td>LowOps platform shared database type for running applications. Options: <code>platform_cnpg</code>, <code>rds_mysql</code>, <code>rds_postgres</code>, <code>azure_postgres</code></td>
 <td>"platform_cnpg"</td>
 </tr>
 <tr>
@@ -2175,7 +2175,7 @@ helm repo update
 </tr>
 <tr>
 <td>lowops.config.common.platform_version</td>
-<td>LowOps platform version. Example: <code>v3.2.4.</code></td>
+<td>LowOps platform version. Example: <code>v3.2.5</code>.</td>
 <td>""</td>
 </tr>
 <tr>
@@ -2190,7 +2190,7 @@ helm repo update
 </tr>
 <tr>
 <td>lowops.config.common.storage_class</td>
-<td>LowOps platform storage class. When <code>foundation_type</code> == <code>aws</code>, use <code>gp3</code> storage class.</td>
+<td>LowOps platform storage class. When <code>foundation_type</code> == <code>aws</code>, use <code>gp3</code> storage class. When <code>foundation_type</code> == <code>azure</code>, use <code>default</code> storage class.</td>
 <td>"csi-hostpath-sc"</td>
 </tr>
 </tbody>
@@ -2386,9 +2386,9 @@ helm repo update
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>lowops.config.kanister.retention_days</td>
+<td>Kanister backup retention days. Default value is <code>0</code> which means that backups will be stored indefinitely.</td>
+<td>"0"</td>
 </tr>
 </tbody>
 </table>
