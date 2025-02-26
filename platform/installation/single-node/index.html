@@ -12,7 +12,7 @@
         <link rel="prev" href="../advanced-configuration/">
       
       
-        <link rel="next" href="../light-version/">
+        <link rel="next" href="../../../how-to/checkout-mendix-8-app/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Free Version - Low-Ops Platform Documentation</title>
+        <title>Single Node installation - Low-Ops Platform Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#free-version" class="md-skip">
+        <a href="#single-node-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Free Version
+              Single Node installation
             
           </span>
         </div>
@@ -1515,7 +1515,7 @@
           
   
   <span class="md-ellipsis">
-    Free Version
+    Single Node installation
   </span>
   
 
@@ -1526,7 +1526,7 @@
         
   
   <span class="md-ellipsis">
-    Free Version
+    Single Node installation
   </span>
   
 
@@ -1593,27 +1593,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../light-version/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Light Version
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1889,14 +1868,15 @@
                   
 
 
-<h1 id="free-version">Free Version</h1>
-<p>The free version of the Low-Ops platform allows you to run Low-Ops on a single Linux machine, making it ideal for testing purposes.</p>
+<h1 id="single-node-installation">Single Node installation</h1>
+<p>The single node version of the Low-Ops platform allows you to run Low-Ops on a single Linux machine, making it ideal for testing purposes.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <h3 id="system-resources">System resources</h3>
-<p>The minimum system resources required to run the free version of the Low-Ops platform are:</p>
+<p>The minimum system resources required to run the single node version of the Low-Ops platform are:</p>
 <ul>
-<li>16 GB of RAM</li>
-<li>8-core CPU</li>
+<li>RAM: 16 GB </li>
+<li>CPU: 8-core</li>
+<li>Disk: 500 GB</li>
 </ul>
 <h2 id="platform-foundation">Platform Foundation</h2>
 <p>This setup requires a single Linux (Ubuntu 22.04) server with internet access.
@@ -1904,15 +1884,14 @@ DNS resolution is required for the platform to work. Create a DNS record for the
 <h2 id="installation">Installation</h2>
 <p>To start Platform installation process make sure you have ssh access to the server with sudo privileges.
 During platform installation all OCI images will be pulled from the docker hub public repositories. But the image pull limit could be reached.
-To avoid this issue you have to set docker registry credentials.</p>
-<p>NOTE: Before installation you need to set the following environment variables:</p>
-<div class="highlight"><pre><span></span><code>export BASE_DOMAIN=your.domain.com                   # platform base domain
-export PLATFORM_PRIVATE_REGISTRY_USER=your_username  # docker hub username
-export PLATFORM_PRIVATE_REGISTRY_TOKEN=your_token    # docker hub PAT-token (Public Read-Only Access Token is sufficient)
-</code></pre></div>
+To avoid this issue you have to set docker registry credentials, you can request temporary credentials from the Low-Ops team.</p>
 <p>Then run the following command to start the installation:
-<div class="highlight"><pre><span></span><code>curl -s https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh | bash
-</code></pre></div></p>
+<div class="highlight"><pre><span></span><code>curl -sO https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh &amp;&amp; chmod +x install-platform.sh &amp;&amp; ./install-platform.sh
+</code></pre></div>
+You will be asked to provide the following information:
+- Platform base domain (must be resolvable from the internet to your server public IP address)
+- Docker registry credentials
+- Platform admin credentials</p>
 <p>After installation is complete, you can access the platform portal UI at <code>https://portal.your.domain.com</code>.</p>
 
 
@@ -1960,13 +1939,13 @@ export PLATFORM_PRIVATE_REGISTRY_TOKEN=your_token    # docker hub PAT-token (Pub
         
         
           
-          <a href="../light-version/" class="md-footer__link md-footer__link--next" aria-label="Next: Light Version">
+          <a href="../../../how-to/checkout-mendix-8-app/" class="md-footer__link md-footer__link--next" aria-label="Next: Checkout mendix 8 app">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Light Version
+                Checkout mendix 8 app
               </div>
             </div>
             <div class="md-footer__button md-icon">
