@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../advanced-configuration/">
       
       
-        <link rel="next" href="../../application/development/pipelines/">
+        <link rel="next" href="../single-node/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
-        <title>Mendix - Low-Ops Platform Documentation</title>
+        <title>AWS Single node installation - Low-Ops Platform Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mendix" class="md-skip">
+        <a href="#aws-single-node-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="/" title="Low-Ops Platform Documentation" class="md-header__button md-logo" aria-label="Low-Ops Platform Documentation" data-md-component="logo">
       
-  <img src="../../assets/images/favicon.png" alt="logo">
+  <img src="../../../assets/images/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Mendix
+              AWS Single node installation
             
           </span>
         </div>
@@ -227,7 +227,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="/" title="Low-Ops Platform Documentation" class="md-nav__button md-logo" aria-label="Low-Ops Platform Documentation" data-md-component="logo">
       
-  <img src="../../assets/images/favicon.png" alt="logo">
+  <img src="../../../assets/images/favicon.png" alt="logo">
 
     </a>
     Low-Ops Platform Documentation
@@ -242,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -259,21 +259,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -287,7 +285,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting started
@@ -298,30 +296,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Mendix
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../getting-started/mendix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -330,137 +308,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-new-application-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a New Application Version
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating a New Application Version">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#access-git-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Git Repository
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#open-project-in-mendix-studio-pro" class="md-nav__link">
-    <span class="md-ellipsis">
-      Open Project in Mendix Studio Pro
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#make-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Make Changes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#commit-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commit Changes
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verifying-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verifying Changes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Verifying Changes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#check-activity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check Activity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#access-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Environment
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verify-changes-in-mendix" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verify Changes in Mendix
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -554,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/development/pipelines/" class="md-nav__link">
+      <a href="../../../application/development/pipelines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/development/jobs/best-practices/" class="md-nav__link">
+      <a href="../../../application/development/jobs/best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -633,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/development/jobs/jobs_overview/" class="md-nav__link">
+      <a href="../../../application/development/jobs/jobs_overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -654,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/development/jobs/vulnerabilities/" class="md-nav__link">
+      <a href="../../../application/development/jobs/vulnerabilities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -728,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/access/" class="md-nav__link">
+      <a href="../../../application/environments/access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -749,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/actions/" class="md-nav__link">
+      <a href="../../../application/environments/actions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/alerts/" class="md-nav__link">
+      <a href="../../../application/environments/alerts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -791,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/create/" class="md-nav__link">
+      <a href="../../../application/environments/create/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/deploy/" class="md-nav__link">
+      <a href="../../../application/environments/deploy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/firewall/" class="md-nav__link">
+      <a href="../../../application/environments/firewall/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/logs/" class="md-nav__link">
+      <a href="../../../application/environments/logs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -875,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/monitoring/" class="md-nav__link">
+      <a href="../../../application/environments/monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/settings/" class="md-nav__link">
+      <a href="../../../application/environments/settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -954,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/backups/export/" class="md-nav__link">
+      <a href="../../../application/environments/backups/export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -975,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/backups/import/" class="md-nav__link">
+      <a href="../../../application/environments/backups/import/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -996,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/backups/manage/" class="md-nav__link">
+      <a href="../../../application/environments/backups/manage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1017,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/environments/backups/restore/" class="md-nav__link">
+      <a href="../../../application/environments/backups/restore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1054,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/source/" class="md-nav__link">
+      <a href="../../../application/source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1075,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/activities/" class="md-nav__link">
+      <a href="../../../application/activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1096,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/settings/" class="md-nav__link">
+      <a href="../../../application/settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1121,19 +968,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -1147,7 +996,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Platform
@@ -1161,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/login/" class="md-nav__link">
+      <a href="../../login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1182,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/releases/" class="md-nav__link">
+      <a href="../../releases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1203,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/support/" class="md-nav__link">
+      <a href="../../support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1261,7 +1110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/administration/portal-administration/" class="md-nav__link">
+      <a href="../../administration/portal-administration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1319,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/administration/users/create/" class="md-nav__link">
+      <a href="../../administration/users/create/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1340,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/administration/users/delete/" class="md-nav__link">
+      <a href="../../administration/users/delete/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1361,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/administration/users/reset-password/" class="md-nav__link">
+      <a href="../../administration/users/reset-password/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1427,7 +1276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/administration/applications/offboard/" class="md-nav__link">
+      <a href="../../administration/applications/offboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1448,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/administration/applications/onboard/" class="md-nav__link">
+      <a href="../../administration/applications/onboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1477,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/administration/app-templates/" class="md-nav__link">
+      <a href="../../administration/app-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1498,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/administration/membership/" class="md-nav__link">
+      <a href="../../administration/membership/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1564,7 +1413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/architecture/high-level-architecture/" class="md-nav__link">
+      <a href="../../architecture/high-level-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1590,19 +1439,21 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
         
           
           <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
@@ -1616,7 +1467,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
             Installation
@@ -1630,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/installation/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1651,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/installation/advanced-configuration/" class="md-nav__link">
+      <a href="../advanced-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1669,10 +1520,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../platform/installation/aws-single-node/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AWS Single node installation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1681,6 +1552,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-ec2-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create EC2 instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-dns-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configure DNS record
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-install-lowops-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Install LowOps Platform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Post-Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1693,7 +1653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/installation/single-node/" class="md-nav__link">
+      <a href="../single-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1766,7 +1726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/checkout-mendix-8-app/" class="md-nav__link">
+      <a href="../../../how-to/checkout-mendix-8-app/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1787,7 +1747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/mendix-license/" class="md-nav__link">
+      <a href="../../../how-to/mendix-license/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1808,7 +1768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/migrate-app-from-mendix-public-cloud/" class="md-nav__link">
+      <a href="../../../how-to/migrate-app-from-mendix-public-cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1829,7 +1789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/run-nextjs-application/" class="md-nav__link">
+      <a href="../../../how-to/run-nextjs-application/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1894,7 +1854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../references/application-types/" class="md-nav__link">
+      <a href="../../../references/application-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1960,88 +1920,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-a-new-application-version" class="md-nav__link">
+  <a href="#installation-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating a New Application Version
+      Installation steps
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Creating a New Application Version">
+    <nav class="md-nav" aria-label="Installation steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#access-git-repository" class="md-nav__link">
+  <a href="#1-create-ec2-instance" class="md-nav__link">
     <span class="md-ellipsis">
-      Access Git Repository
+      1. Create EC2 instance
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#open-project-in-mendix-studio-pro" class="md-nav__link">
+  <a href="#2-configure-dns-record" class="md-nav__link">
     <span class="md-ellipsis">
-      Open Project in Mendix Studio Pro
+      2. Configure DNS record
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#make-changes" class="md-nav__link">
+  <a href="#3-install-lowops-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      Make Changes
+      3. Install LowOps Platform
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#commit-changes" class="md-nav__link">
+  <a href="#4-post-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Commit Changes
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verifying-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verifying Changes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Verifying Changes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#check-activity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check Activity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#access-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Access Environment
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verify-changes-in-mendix" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verify Changes in Mendix
+      4. Post-Installation
     </span>
   </a>
   
@@ -2067,103 +1985,97 @@
                   
 
 
-<h1 id="mendix">Mendix</h1>
-<p>This document guides you through creating and deploying new application versions in the Low-Ops platform using Mendix Studio Pro.</p>
+<h1 id="aws-single-node-installation">AWS Single node installation</h1>
 <h2 id="overview">Overview</h2>
-<p>Mendix Studio Pro is a powerful low-code development environment that allows developers to rapidly build and customize enterprise-grade applications. This guide covers the entire process, from accessing the Git repository to making changes in Mendix Studio Pro and verifying them across different environments.</p>
+<p>This guide describes how to install the LowOps platform on a single AWS EC2 instance. This setup is suitable for testing and development environments. For production use, we recommend using a multi-node setup with proper high availability.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>Access to the Low-Ops portal</li>
-<li>Mendix Studio Pro installed on your machine</li>
+<li>AWS Console access with permissions to create EC2 instances and security groups</li>
+<li>Available domain name with DNS management access</li>
+<li>Minimum system requirements:</li>
+<li>RAM: 16 GB</li>
+<li>CPU: 8 vCPUs</li>
+<li>Disk: 500 GB</li>
+<li>Ubuntu 22.04 LTS</li>
 </ul>
-<blockquote>
-<p><strong>Note:</strong> For instructions on logging into the Low-Ops portal, refer to the <a href="../../platform/login/">Login tutorial</a>.</p>
-</blockquote>
-<h2 id="creating-a-new-application-version">Creating a New Application Version</h2>
-<h3 id="access-git-repository">Access Git Repository</h3>
+<h2 id="installation-steps">Installation steps</h2>
+<h3 id="1-create-ec2-instance">1. Create EC2 instance</h3>
 <ol>
-<li>In the Low-Ops portal, navigate to the "Security" tab.</li>
+<li>Log in to AWS Console</li>
+<li>Navigate to EC2 Dashboard</li>
 <li>
-<p>Copy the Git repository URL.</p>
-<p><img src="../../assets/images/source.jpg" width="500" alt="Git repository URL in Security tab"></p>
+<p>Click <code>Launch Instance</code></p>
+<p><img src="../../assets/images/ec2_dashboard.png" width="500" alt="EC2 Dashboard"></p>
+</li>
+<li>
+<p>Configure instance <code>Name</code> and <code>OS AMI type</code> (Tested on Ubuntu 22.04)</p>
+<p><img src="../../assets/images/os_image_name.png" width="500" alt="EC2 OS Type"></p>
+</li>
+<li>
+<p>Select instance type (Minimum resources required: 8vCPU, 16GB RAM)</p>
+</li>
+<li>Recommended: t3.2xlarge or similar</li>
+<li>
+<p>Make sure to enable T2/T3 unlimited for consistent performance</p>
+<p><img src="../../assets/images/instance_type.png" width="500" alt="EC2 Instance type"></p>
+</li>
+<li>
+<p>Configure Networking and Storage instance settings:</p>
+</li>
+<li>Network: Create a new VPC or use existing one</li>
+<li>Security Group: Create new with following inbound rules:<ul>
+<li>SSH (22) from your IP</li>
+<li>HTTP (80) from anywhere</li>
+<li>HTTPS (443) from anywhere</li>
+</ul>
+</li>
+<li>Storage: 500 GB GP3 volume for root</li>
+<li>
+<p>Tags: Add appropriate tags for resource management</p>
+<p><img src="../../assets/images/networking_storage.png" width="500" alt="EC2 Networking & Storage"></p>
+</li>
+<li>
+<p>Launch server.</p>
+<p><img src="../../assets/images/launch.png" width="500" alt="EC2 Launch"></p>
 </li>
 </ol>
-<h3 id="open-project-in-mendix-studio-pro">Open Project in Mendix Studio Pro</h3>
+<h3 id="2-configure-dns-record">2. Configure DNS record</h3>
+<ol>
+<li>Configure wildcard <code>A</code> record pointing to server public IP address within DNS provider of your choice.</li>
+<li>Example: If your domain is <code>paas.company.com</code>, create an <code>A</code> record for <code>*.paas.company.com</code> pointing to your EC2 instance's public IP</li>
+<li>Wait for DNS propagation (can take up to 48 hours, but usually much faster)</li>
+</ol>
+<h3 id="3-install-lowops-platform">3. Install LowOps Platform</h3>
 <ol>
 <li>
-<p>In Mendix Studio Pro, click the "Open Private App" button.</p>
-<p><img src="../../assets/images/open_private_app.jpg" width="500" alt="Open Private App button in Mendix Studio Pro"></p>
+<p>SSH into your EC2 instance:
+   <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-i<span class="w"> </span>your-key.pem<span class="w"> </span>ubuntu@your-ec2-public-ip
+</code></pre></div></p>
 </li>
 <li>
-<p>In the pop-up window, paste the Git repository URL.</p>
+<p>Run command to start platform installation:
+   <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sO<span class="w"> </span>https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>install-platform.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./install-platform.sh
+</code></pre></div></p>
 </li>
 <li>
-<p>Click "Connect", then "OK".</p>
-<p><img src="../../assets/images/insert_link.jpg" width="500" alt="Insert Git repository URL"></p>
+<p>During installation process you will be prompted to input:</p>
+</li>
+<li><code>base domain name</code> (For instance if your portal should be available at <code>portal.paas.company.com</code>. Base domain is <code>paas.company.com</code>)</li>
+<li>
+<p>Docker registry credentials. Current dockerhub pull image limits requires at list pro plan PAT for successfull installation.</p>
+</li>
+<li>
+<p>Wait until <code>lowops-platform</code> pod in <code>lowops-devops</code> namespace status is <code>Completed</code>. Usually takes 20-30 minutes.</p>
+</li>
+<li>
+<p>After installation completes, you can access the platform portal using the credentials from the script output.</p>
 </li>
 </ol>
-<h3 id="make-changes">Make Changes</h3>
-<ol>
-<li>
-<p>In the "MyFirstModule" menu, select "Home_Web" from the dropdown list.</p>
-<p><img src="../../assets/images/home_web.jpg" width="500" alt="Selecting Home_Web in Mendix Studio Pro"></p>
-</li>
-<li>
-<p>Double-click the item you wish to modify.</p>
-</li>
-<li>
-<p>Make your desired changes and click "OK".</p>
-<p><img src="../../assets/images/make_change.jpg" width="500" alt="Making changes in Mendix Studio Pro"></p>
-</li>
-</ol>
-<h3 id="commit-changes">Commit Changes</h3>
-<ol>
-<li>
-<p>Click the "Commit" button, then "Save and Continue".</p>
-<p><img src="../../assets/images/commit.jpg" width="500" alt="Committing changes in Mendix Studio Pro"></p>
-</li>
-<li>
-<p>In the pop-up window, describe your changes and click "OK".</p>
-<p><img src="../../assets/images/changes.jpg" width="500" alt="Describing changes in commit message"></p>
-</li>
-</ol>
-<h2 id="verifying-changes">Verifying Changes</h2>
-<h3 id="check-activity">Check Activity</h3>
-<ol>
-<li>Navigate to the Activity tab </li>
-</ol>
-<blockquote>
-<p><strong>Note:</strong> To learn how to access Activity tab, follow the steps from the <a href="../../application/activities/">Activities tutorial</a></p>
-</blockquote>
-<ol>
-<li>
-<p>The status of the changes made will be "Completed".</p>
-<p><img src="../../assets/images/activities.jpg" width="500" alt="Activity tab"></p>
-</li>
-</ol>
-<h3 id="access-environment">Access Environment</h3>
-<ol>
-<li>
-<p>Go to the "Environments" tab and select an environment.</p>
-<p><img src="../../assets/images/environments_overview.jpg" width="500" alt="Environments overview in Low-Ops platform"></p>
-</li>
-<li>
-<p>In the left-side menu, go to "Access".</p>
-</li>
-</ol>
-<blockquote>
-<p><strong>Note:</strong> To learn how to access "Access" tab, follow the steps from the <a href="../../application/environments/access/">Access tutorial</a></p>
-</blockquote>
-<pre><code>&lt;img src="../../assets/images/access.jpg" width="500" alt="Access tab"&gt;
-</code></pre>
-<h3 id="verify-changes-in-mendix">Verify Changes in Mendix</h3>
-<ol>
-<li>Use the provided URL and login credentials to access Mendix Studio Pro.</li>
-<li>
-<p>After logging in, you'll be directed to the Mendix home page where you can observe your implemented changes.</p>
-<p><img src="../../assets/images/mendix_home.jpg" width="500" alt="Mendix home page with implemented changes"></p>
-</li>
-</ol>
+<h3 id="4-post-installation">4. Post-Installation</h3>
+<ul>
+<li>Access the platform portal at <code>https://portal.your.domain.com</code></li>
+<li>Start using platform <a href="../../administration/applications/onboard/">Platform Administration</a></li>
+</ul>
 
 
 
@@ -2193,7 +2105,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../advanced-configuration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Advanced Configuration">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2203,20 +2115,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Advanced Configuration
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../application/development/pipelines/" class="md-footer__link md-footer__link--next" aria-label="Next: Pipelines">
+          <a href="../single-node/" class="md-footer__link md-footer__link--next" aria-label="Next: Single Node installation">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Pipelines
+                Single Node installation
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2256,10 +2168,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.footer", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "header.autohide"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.footer", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "header.autohide"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>
