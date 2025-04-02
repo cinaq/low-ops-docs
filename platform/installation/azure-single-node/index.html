@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../architecture/high-level-architecture/">
+        <link rel="prev" href="../aws-single-node/">
       
       
-        <link rel="next" href="../advanced-configuration/">
+        <link rel="next" href="../single-node/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Installation - Low-Ops Platform Documentation</title>
+        <title>Azure Single node installation - Low-Ops Platform Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#azure-single-node-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Azure Single node installation
             
           </span>
         </div>
@@ -1478,30 +1478,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Installation
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1510,128 +1490,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#required-packages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Required packages
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kubernetes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-foundation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Foundation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Platform Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configure-namespace" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Namespace
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-metallb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install metallb
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Platform
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1683,10 +1541,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../azure-single-node/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Azure Single node installation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1695,6 +1573,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-azure-virtual-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Azure Virtual Machine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-dns-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configure DNS record
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-install-lowops-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Install LowOps Platform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Post-Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1956,97 +1923,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Prerequisites">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#required-packages" class="md-nav__link">
+  <a href="#1-create-azure-virtual-machine" class="md-nav__link">
     <span class="md-ellipsis">
-      Required packages
+      1. Create Azure Virtual Machine
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#kubernetes" class="md-nav__link">
+  <a href="#2-configure-dns-record" class="md-nav__link">
     <span class="md-ellipsis">
-      Kubernetes
+      2. Configure DNS record
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
+  <a href="#3-install-lowops-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      Resources
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-foundation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Foundation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Platform Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configure-namespace" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Namespace
+      3. Install LowOps Platform
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-metallb" class="md-nav__link">
+  <a href="#4-post-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Install metallb
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Platform
+      4. Post-Installation
     </span>
   </a>
   
@@ -2072,126 +2006,105 @@
                   
 
 
-<h1 id="installation">Installation</h1>
+<h1 id="azure-single-node-installation">Azure Single node installation</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide describes how to install the LowOps platform on a single Azure Virtual Machine. This setup is suitable for testing and development environments. For production use, we recommend using a multi-node setup with proper high availability.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<h3 id="required-packages">Required packages</h3>
-<p>The following binaries must be present on the machine with access to Kubernetes api before starting:</p>
 <ul>
-<li>kubectl - <code>v1.27</code></li>
-<li>helm - <code>v3.9</code></li>
+<li>Azure Portal access with permissions to create Virtual Machines and Network Security Groups</li>
+<li>Available domain name with DNS management access</li>
+<li>Minimum system requirements:</li>
+<li>RAM: 16 GB</li>
+<li>CPU: 8 vCPUs</li>
+<li>Disk: 500 GB</li>
+<li>Ubuntu 22.04 LTS</li>
 </ul>
-<h3 id="kubernetes">Kubernetes</h3>
-<p>LowOps platform requires a Kubernetes cluster.</p>
-<p>Curently supported versions are:</p>
-<ul>
-<li><code>1.27</code></li>
+<h2 id="installation-steps">Installation steps</h2>
+<h3 id="1-create-azure-virtual-machine">1. Create Azure Virtual Machine</h3>
+<ol>
+<li>Log in to Azure Portal</li>
+<li>Navigate to Virtual Machines</li>
+<li>Click <code>Create</code> and select <code>Azure virtual machine</code></li>
+</ol>
+<p><img src="../../assets/images/azure_vm.png" width="500" alt="Azure VM"></p>
+<ol>
+<li>Configure basic settings:</li>
+<li>Subscription: Select your subscription</li>
+<li>Resource group: Create new or select existing</li>
+<li>Virtual machine name: Enter a name</li>
+<li>Region: Select your preferred region</li>
+<li>Image: Ubuntu Server 22.04 LTS</li>
+<li>Size: Select a VM size with minimum 8 vCPUs and 16GB RAM (e.g., Standard_D8s_v3)</li>
+</ol>
+<p><img src="../../assets/images/azure_vm_basics.png" width="500" alt="Azure VM Basics"></p>
+<ol>
+<li>Configure Administrator account:</li>
+<li>Authentication type: SSH public key</li>
+<li>Username: azureuser</li>
+<li>SSH public key source: Generate new key pair or use existing</li>
+</ol>
+<p><img src="../../assets/images/azure_vm_size.png" width="500" alt="Azure VM Size"></p>
+<ol>
+<li>Configure networking:</li>
+<li>Virtual network: Create new or select existing</li>
+<li>Subnet: Create new or select existing</li>
+<li>Public IP: Yes</li>
+<li>NIC network security group: Advanced</li>
+<li>Configure network security group with following inbound rules:<ul>
+<li>SSH (22) from your IP</li>
+<li>HTTP (80) from anywhere</li>
+<li>HTTPS (443) from anywhere</li>
 </ul>
-<h3 id="resources">Resources</h3>
-<p>To run the platform you'll need at least 16 GB RAM and 8 core CPU.</p>
-<h2 id="platform-foundation">Platform Foundation</h2>
-<p>The platform foundation is an infrastructure level that has to provide a scalable, flexeble and extensible enviromnemt for the platform lifecycle. To build the platform foundation, you can use cloud providers or on-premise solutions that allow you to run managed or self-managed Kubernetes (k8s) clusters.</p>
-<p>There are 2 different platform <code>foundation_type</code>s:</p>
-<ul>
+</li>
+</ol>
+<p><img src="../../assets/images/azure_vm_networking.png" width="500" alt="Azure VM Networking"></p>
+<ol>
+<li>Configure storage:</li>
+<li>OS disk type: Premium SSD</li>
+<li>OS disk size: 500 GB</li>
+</ol>
+<p><img src="../../assets/images/azure_vm_disk.png" width="500" alt="Azure VM Storage"></p>
+<ol>
+<li>Review and create the VM</li>
+</ol>
+<p><img src="../../assets/images/azure_vm_create.png" width="500" alt="Azure VM Create"></p>
+<h3 id="2-configure-dns-record">2. Configure DNS record</h3>
+<ol>
+<li>Configure wildcard <code>A</code> record pointing to VM public IP address within DNS provider of your choice.</li>
+<li>Example: If your domain is <code>paas.company.com</code>, create an <code>A</code> record for <code>*.paas.company.com</code> pointing to your VM's public IP</li>
+<li>Wait for DNS propagation (can take up to 48 hours, but usually much faster)</li>
+</ol>
+<h3 id="3-install-lowops-platform">3. Install LowOps Platform</h3>
+<ol>
 <li>
-<p><code>generic</code> - Default platform installation method supports any Kubernetes custom or managed solution. All platform components required to run future applications workloads will be installed automatically.</p>
+<p>SSH into your Azure VM:
+   <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>azureuser@your-vm-public-ip
+</code></pre></div></p>
 </li>
 <li>
-<p><code>aws</code> - Optimised platform installation for AWS-specific services natively supports other <code>AWS</code> services such as EKS, RDS, S3, ELB, EBS. To use AWS-managed data resources, you need to create them before platform installation as part of the foundation setup. Refer to the diagram bellow for more details.</p>
+<p>Run command to start platform installation:
+   <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sO<span class="w"> </span>https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>install-platform.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./install-platform.sh
+</code></pre></div></p>
 </li>
+<li>
+<p>During installation process you will be prompted to input:</p>
+</li>
+<li><code>base domain name</code> (For instance if your portal should be available at <code>portal.paas.company.com</code>. Base domain is <code>paas.company.com</code>)</li>
+<li>
+<p>Docker registry credentials. Current dockerhub pull image limits requires at list pro plan PAT for successfull installation.</p>
+</li>
+<li>
+<p>Wait until <code>lowops-platform</code> pod in <code>lowops-devops</code> namespace status is <code>Completed</code>. Usually takes 20-30 minutes.</p>
+</li>
+<li>
+<p>After installation completes, you can access the platform portal using the credentials from the script output.</p>
+</li>
+</ol>
+<h3 id="4-post-installation">4. Post-Installation</h3>
+<ul>
+<li>Access the platform portal at <code>https://portal.paas.company.com</code></li>
+<li>Start using platform <a href="../../administration/applications/onboard/">Platform Administration</a></li>
 </ul>
-<p>High level AWS diagram:</p>
-<p><img alt="LowOps AWS" src="../../../assets/images/aws-foundation.png" /></p>
-<h2 id="platform-configuration">Platform Configuration</h2>
-<p>Before starting the platform installation process, check the configuration options below. Change required paramaters to match your environment setup.</p>
-<p>Create values file <code>values.yaml</code> with following parameters:</p>
-<p>For more advanced configuration and options descriptions follow this <a href="../advanced-configuration/">page</a></p>
-<div class="highlight"><pre><span></span><code>lowops:
-  image:
-    containerImage: registry.gitlab.com/cinaq/low-ops-platform/ansible-roles:0-ci-v3-2-4
-
-  # LowOps platfrom configuration variables
-  config:
-    common:
-      base_domain: ci.cinaq.com
-      platform_state: present
-      foundation_type: generic # supported values: generic, aws, azure
-      email_domain: cinaq.com
-      general_client_name: CINAQ
-      platform_version: v3.2.4
-      low_ops_env: prod # set low-ops-env variable can&#39;t be ci,dev,trial - reserved
-      enable_letsencrypt: &quot;true&quot;
-      enable_nginx_proxy_protocol: &quot;true&quot; # required when running on generic foundation with haproxy
-</code></pre></div>
-<p>Refer to the <a href="../advanced-configuration/">Advanced Configuration</a> page for more details on the available configuration options.</p>
-<h2 id="platform-installation">Platform Installation</h2>
-<h3 id="configure-namespace">Configure Namespace</h3>
-<p>Run script below to create deployment job namespace.
-Add pull secret to the namespace. </p>
-<div class="highlight"><pre><span></span><code>NAMESPACE=lowops-devops
-kubectl create namespace &quot;$NAMESPACE&quot;
-
-UPSTREAM_REGISTRY=&quot;registry.gitlab.com&quot;
-UPSTREAM_REGISTRY_USER=&quot;registry-user&quot; # change with your resgitry user
-UPSTREAM_REGISTRY_TOKEN=&quot;registry-token&quot; # change with your registry password
-UPSTREAM_REGISTRY_AUTH=$(echo -n &quot;$UPSTREAM_REGISTRY_USER:$UPSTREAM_REGISTRY_TOKEN&quot; | base64)
-
-mkdir -p /tmp/lowops-docker-config
-echo &quot;
-{
-    \&quot;auths\&quot;: {
-        \&quot;$UPSTREAM_REGISTRY\&quot;: {\&quot;auth\&quot;: \&quot;$UPSTREAM_REGISTRY_AUTH\&quot;}
-    }
-}
-&quot; &gt; /tmp/lowops-docker-config/config.json
-
-# ensure lowops-registry secret exists
-kubectl -n &quot;$NAMESPACE&quot; create secret generic lowops-registry --from-file=.dockerconfigjson=/tmp/lowops-docker-config/config.json --type=kubernetes.io/dockerconfigjson
-</code></pre></div>
-<h3 id="install-metallb">Install metallb</h3>
-<blockquote>
-<p><strong>Note:</strong> This step is not needed for managed k8s solutions.</p>
-</blockquote>
-<p>Add bitnami helm repo</p>
-<div class="highlight"><pre><span></span><code>helm repo add &quot;bitnami&quot; &quot;https://charts.bitnami.com/bitnami&quot;
-helm repo update
-</code></pre></div>
-<p>Install metallb chart</p>
-<div class="highlight"><pre><span></span><code># Network pool must be accesseble from cluster.
-START_NETWORK=172.20.255.200
-END_NETWORK=172.20.255.250
-helm upgrade -i -n metallb --create-namespace metallb bitnami/metallb \
-    --version 3.0.12 \
-    --set &quot;configInline.address-pools[0].name=default&quot; \
-    --set &quot;configInline.address-pools[0].protocol=layer2&quot; \
-    --set &quot;configInline.address-pools[0].addresses[0]=${START_NETWORK}-${END_NETWORK}&quot; \
-    --set &quot;speaker.secretValue=stronk-key&quot;
-</code></pre></div>
-<h3 id="install-platform">Install Platform</h3>
-<p>From the deploy server with access to the Kubernetes cluster API. Install the platform by installing <code>lowops</code> helm chart.</p>
-<p>Add lowops helm repository.</p>
-<div class="highlight"><pre><span></span><code>helm repo add --username $UPSTREAM_REGISTRY_USER --password $UPSTREAM_REGISTRY_TOKEN lowops \
-    &quot;https://gitlab.com/api/v4/projects/41532268/packages/helm/stable&quot;
-
-helm repo update
-</code></pre></div>
-<p>Run <code>helm install</code> command to start the platform setup process.</p>
-<div class="highlight"><pre><span></span><code>NAMESPACE=lowops-devops
-CHART_VALUES_FILE=values.yaml
-CHART_VERSION=0.1.407
-HELM_CMD=&quot;helm upgrade -i lowops-platform lowops/lowops -n $NAMESPACE&quot;
-if [ -f &quot;$CHART_VALUES_FILE&quot; ]; then
-    HELM_CMD=&quot;$HELM_CMD -f $CHART_VALUES_FILE&quot;
-fi
-if [ -n &quot;$CHART_VERSION&quot; ]; then
-    HELM_CMD=&quot;$HELM_CMD --version=$CHART_VERSION&quot;
-fi
-echo &quot;$HELM_CMD&quot;
-eval &quot;$HELM_CMD&quot;
-</code></pre></div>
-<p>After deploy job started you can get installation log</p>
-<div class="highlight"><pre><span></span><code>kubectl logs -n lowops-devops --timestamps=true job/lowops-platform -f
-</code></pre></div>
-<p>After deploy finished successfully start with exploring LowOps platform portal. In browser access https://portal.ci.cinaq.com (where <code>ci.cinaq.com</code> is your base domain.)</p>
 
 
 
@@ -2221,7 +2134,7 @@ eval &quot;$HELM_CMD&quot;
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../architecture/high-level-architecture/" class="md-footer__link md-footer__link--prev" aria-label="Previous: High Level Architecture">
+          <a href="../aws-single-node/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AWS Single node installation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2231,20 +2144,20 @@ eval &quot;$HELM_CMD&quot;
                 Previous
               </span>
               <div class="md-ellipsis">
-                High Level Architecture
+                AWS Single node installation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../advanced-configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Advanced Configuration">
+          <a href="../single-node/" class="md-footer__link md-footer__link--next" aria-label="Next: Single Node installation">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Advanced Configuration
+                Single Node installation
               </div>
             </div>
             <div class="md-footer__button md-icon">
