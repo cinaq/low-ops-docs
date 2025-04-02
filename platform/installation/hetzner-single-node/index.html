@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../hetzner-single-node/">
+        <link rel="prev" href="../azure-single-node/">
       
       
-        <link rel="next" href="../../../how-to/checkout-mendix-8-app/">
+        <link rel="next" href="../single-node/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Single Node installation - Low-Ops Platform Documentation</title>
+        <title>Hetzner Cloud Single node installation - Low-Ops Platform Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#single-node-installation" class="md-skip">
+        <a href="#hetzner-cloud-single-node-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Single Node installation
+              Hetzner Cloud Single node installation
             
           </span>
         </div>
@@ -1562,27 +1562,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../hetzner-single-node/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hetzner Cloud Single node installation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1599,7 +1578,7 @@
           
   
   <span class="md-ellipsis">
-    Single Node installation
+    Hetzner Cloud Single node installation
   </span>
   
 
@@ -1610,7 +1589,7 @@
         
   
   <span class="md-ellipsis">
-    Single Node installation
+    Hetzner Cloud Single node installation
   </span>
   
 
@@ -1632,19 +1611,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Prerequisites">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#system-resources" class="md-nav__link">
+  <a href="#1-install-and-configure-hetzner-cloud-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      System resources
+      1. Install and Configure Hetzner Cloud CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-hetzner-cloud-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Create Hetzner Cloud Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-configure-dns-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Configure DNS record
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-install-lowops-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Install LowOps Platform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Post-Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-cleanup-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Cleanup (Optional)
     </span>
   </a>
   
@@ -1655,28 +1697,31 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#platform-foundation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Foundation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../single-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Single Node installation
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1917,19 +1962,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Prerequisites">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#system-resources" class="md-nav__link">
+  <a href="#1-install-and-configure-hetzner-cloud-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      System resources
+      1. Install and Configure Hetzner Cloud CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-hetzner-cloud-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Create Hetzner Cloud Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-configure-dns-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Configure DNS record
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-install-lowops-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Install LowOps Platform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Post-Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-cleanup-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Cleanup (Optional)
     </span>
   </a>
   
@@ -1937,24 +2045,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-foundation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platform Foundation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
   
 </li>
       
@@ -1973,31 +2063,112 @@
                   
 
 
-<h1 id="single-node-installation">Single Node installation</h1>
-<p>The single node version of the Low-Ops platform allows you to run Low-Ops on a single Linux machine, making it ideal for testing purposes.</p>
+<h1 id="hetzner-cloud-single-node-installation">Hetzner Cloud Single node installation</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide describes how to install the LowOps platform on a single Hetzner Cloud server using their CLI tool. This setup is suitable for testing and development environments. For production use, we recommend using a multi-node setup with proper high availability.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<h3 id="system-resources">System resources</h3>
-<p>The minimum system resources required to run the single node version of the Low-Ops platform are:</p>
 <ul>
-<li>RAM: 16 GB </li>
-<li>CPU: 8-core</li>
+<li>Hetzner Cloud account with API access</li>
+<li>Hetzner Cloud CLI (<code>hcloud</code>) installed</li>
+<li>Available domain name with DNS management access</li>
+<li>Minimum system requirements:</li>
+<li>RAM: 16 GB</li>
+<li>CPU: 8 vCPUs</li>
 <li>Disk: 500 GB</li>
+<li>Ubuntu 22.04 LTS</li>
 </ul>
-<h2 id="platform-foundation">Platform Foundation</h2>
-<p>This setup requires a single Linux (Ubuntu 22.04) server with internet access.
-DNS resolution is required for the platform to work. Create a DNS record for the platform base domain.</p>
-<h2 id="installation">Installation</h2>
-<p>To start Platform installation process make sure you have ssh access to the server with sudo privileges.
-During platform installation all OCI images will be pulled from the docker hub public repositories. But the image pull limit could be reached.
-To avoid this issue you have to set docker registry credentials, you can request temporary credentials from the Low-Ops team.</p>
-<p>Then run the following command to start the installation:
-<div class="highlight"><pre><span></span><code>curl -sO https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh &amp;&amp; chmod +x install-platform.sh &amp;&amp; ./install-platform.sh
-</code></pre></div>
-You will be asked to provide the following information:
-- Platform base domain (must be resolvable from the internet to your server public IP address)
-- Docker registry credentials
-- Platform admin credentials</p>
-<p>After installation is complete, you can access the platform portal UI at <code>https://portal.your.domain.com</code>.</p>
+<h2 id="installation-steps">Installation steps</h2>
+<h3 id="1-install-and-configure-hetzner-cloud-cli">1. Install and Configure Hetzner Cloud CLI</h3>
+<ol>
+<li>
+<p>Install the Hetzner Cloud CLI:
+   <div class="highlight"><pre><span></span><code><span class="c1"># For macOS using Homebrew</span>
+brew<span class="w"> </span>install<span class="w"> </span>hcloud
+
+<span class="c1"># For Linux</span>
+curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/hetznercloud/cli/master/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</code></pre></div></p>
+</li>
+<li>
+<p>Configure the CLI with your API token:
+   <div class="highlight"><pre><span></span><code>hcloud<span class="w"> </span>context<span class="w"> </span>create<span class="w"> </span>lowops
+<span class="c1"># When prompted, enter your API token from the Hetzner Cloud Console</span>
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="2-create-hetzner-cloud-server">2. Create Hetzner Cloud Server</h3>
+<ol>
+<li>
+<p>Create an SSH key for server access:
+   <div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-f<span class="w"> </span>~/.ssh/hetzner_lowops
+hcloud<span class="w"> </span>ssh-key<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>lowops-key<span class="w"> </span>--public-key-from-file<span class="w"> </span>~/.ssh/hetzner_lowops.pub
+</code></pre></div></p>
+</li>
+<li>
+<p>Create public ipv4 IP address
+   <div class="highlight"><pre><span></span><code>hcloud<span class="w"> </span>primary-ip<span class="w"> </span>create<span class="w"> </span>--datacenter<span class="o">=</span>hel1-dc2<span class="w"> </span>--name<span class="o">=</span>lowops-ip<span class="w"> </span>--type<span class="o">=</span>ipv4
+</code></pre></div></p>
+</li>
+<li>
+<p>Create the server with required specifications:
+   <div class="highlight"><pre><span></span><code>hcloud<span class="w"> </span>server<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>lowops-server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--type<span class="w"> </span>cxp41<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--image<span class="w"> </span>ubuntu-22.04<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--ssh-key<span class="w"> </span>lowops-key<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--datacenter<span class="w"> </span>hel1-dc2<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--primary-ipv4<span class="w"> </span>lowops-ip
+</code></pre></div></p>
+</li>
+<li>
+<p>Get the server's public IP:
+   <div class="highlight"><pre><span></span><code>hcloud<span class="w"> </span>server<span class="w"> </span>list
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="3-configure-dns-record">3. Configure DNS record</h3>
+<ol>
+<li>Configure wildcard <code>A</code> record pointing to server public IP address within DNS provider of your choice.</li>
+<li>Example: If your domain is <code>paas.company.com</code>, create an <code>A</code> record for <code>*.paas.company.com</code> pointing to your server's public IP</li>
+<li>Wait for DNS propagation (can take up to 48 hours, but usually much faster)</li>
+</ol>
+<h3 id="4-install-lowops-platform">4. Install LowOps Platform</h3>
+<ol>
+<li>
+<p>SSH into your Hetzner server:
+   <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-i<span class="w"> </span>~/.ssh/hetzner_lowops<span class="w"> </span>root@your-server-public-ip
+</code></pre></div></p>
+</li>
+<li>
+<p>Run command to start platform installation:
+   <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sO<span class="w"> </span>https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>install-platform.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./install-platform.sh
+</code></pre></div></p>
+</li>
+<li>
+<p>During installation process you will be prompted to input:</p>
+</li>
+<li><code>base domain name</code> (For instance if your portal should be available at <code>portal.paas.company.com</code>. Base domain is <code>paas.company.com</code>)</li>
+<li>
+<p>Docker registry credentials. Current dockerhub pull image limits requires at list pro plan PAT for successfull installation.</p>
+</li>
+<li>
+<p>Wait until <code>lowops-platform</code> pod in <code>lowops-devops</code> namespace status is <code>Completed</code>. Usually takes 20-30 minutes.</p>
+</li>
+<li>
+<p>After installation completes, you can access the platform portal using the credentials from the script output.</p>
+</li>
+</ol>
+<h3 id="5-post-installation">5. Post-Installation</h3>
+<ul>
+<li>Access the platform portal at <code>https://portal.paas.company.com</code></li>
+<li>Start using platform <a href="../../administration/applications/onboard/">Platform Administration</a></li>
+</ul>
+<h3 id="6-cleanup-optional">6. Cleanup (Optional)</h3>
+<p>If you need to remove the server and associated resources:
+<div class="highlight"><pre><span></span><code>hcloud<span class="w"> </span>server<span class="w"> </span>delete<span class="w"> </span>lowops-server
+hcloud<span class="w"> </span>primary-ip<span class="w"> </span>delete<span class="w"> </span>lowops-ip
+hcloud<span class="w"> </span>ssh-key<span class="w"> </span>delete<span class="w"> </span>lowops-key
+</code></pre></div></p>
 
 
 
@@ -2027,7 +2198,7 @@ You will be asked to provide the following information:
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../hetzner-single-node/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Hetzner Cloud Single node installation">
+          <a href="../azure-single-node/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Azure Single node installation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2037,20 +2208,20 @@ You will be asked to provide the following information:
                 Previous
               </span>
               <div class="md-ellipsis">
-                Hetzner Cloud Single node installation
+                Azure Single node installation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../how-to/checkout-mendix-8-app/" class="md-footer__link md-footer__link--next" aria-label="Next: Checkout mendix 8 app">
+          <a href="../single-node/" class="md-footer__link md-footer__link--next" aria-label="Next: Single Node installation">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Checkout mendix 8 app
+                Single Node installation
               </div>
             </div>
             <div class="md-footer__button md-icon">
